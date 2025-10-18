@@ -33,6 +33,10 @@ public class BookController {
 
     @GetMapping
     public Flux<BookDTO> getAllBooks() {
+
+        System.out.println("Thread in getAllBooks.......................: " + Thread.currentThread().getName());
+
+
         return bookService.getAllBooks()
                 .map(book -> new BookDTO(book.getId(), book.getTitle(), book.getAuthor(), book.getStatus()));
     }
