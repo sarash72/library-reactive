@@ -3,22 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.6</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>com.example</groupId>
+        <artifactId>library-reactive</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+<!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>library-reactive</artifactId>
+    <artifactId>book</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>library-reactive</name>
-    <description>library-reactive</description>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>book</module>
-        <module>member</module>
-    </modules>
+    <name>book</name>
+    <description>book</description>
     <url/>
     <licenses>
         <license/>
