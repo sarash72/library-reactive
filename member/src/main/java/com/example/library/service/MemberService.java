@@ -24,7 +24,7 @@ public class MemberService {
     public Flux<BookDTO> getAllBooks() {
         Flux<BookDTO> books = webClientBuilder.build()
                 .get()
-                .uri("http://localhost:8080/api/books")
+                .uri("http://localhost:8080/books")
                 .retrieve()
                 .bodyToFlux(BookDTO.class);
         return books;
