@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: library-backend-service
+spec:
+  selector:
+    app: library-reactive
+  type: NodePort # برای دسترسی از خارج کلاستر (Minikube لوکال)
+  ports:
+    - protocol: TCP
+      port: 8080      # پورت داخلی
+      targetPort: 8080
+      nodePort: 30080 # پورت روی ماشین میزبان
